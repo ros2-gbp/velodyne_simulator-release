@@ -1,0 +1,12 @@
+Source: ros-jade-velodyne-description
+Section: misc
+Priority: extra
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://dataspeedinc.com
+Standards-Version: 3.9.2
+
+Package: ros-jade-velodyne-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-urdf, ros-jade-xacro
+Description: URDF and meshes describing Velodyne laser scanners.
