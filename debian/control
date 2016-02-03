@@ -1,0 +1,12 @@
+Source: ros-jade-velodyne-gazebo-plugins
+Section: misc
+Priority: extra
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-gazebo-plugins, ros-jade-gazebo-ros, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-tf
+Homepage: http://dataspeedinc.com
+Standards-Version: 3.9.2
+
+Package: ros-jade-velodyne-gazebo-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-gazebo-plugins, ros-jade-gazebo-ros, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-tf
+Description: Gazebo plugin to provide simulated data from Velodyne laser scanners.
