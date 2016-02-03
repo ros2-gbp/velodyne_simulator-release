@@ -1,0 +1,12 @@
+Source: ros-jade-velodyne-simulator
+Section: misc
+Priority: extra
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://dataspeedinc.com
+Standards-Version: 3.9.2
+
+Package: ros-jade-velodyne-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-velodyne-description, ros-jade-velodyne-gazebo-plugins
+Description: Metapackage allowing easy installation of Velodyne simulation components.
