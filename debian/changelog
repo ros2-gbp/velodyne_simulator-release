@@ -1,0 +1,19 @@
+ros-kinetic-velodyne-description (1.0.3-0wily) wily; urgency=high
+
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sat, 13 Aug 2016 04:00:00 -0000
+
+ros-kinetic-velodyne-description (1.0.2-0wily) wily; urgency=high
+
+  * Moved M_PI property out of macro to support multiple instances
+  * Materials caused problems with more than one sensors. Removed.
+  * Added example urdf and gazebo
+  * Changed to DAE meshes
+  * Added meshes. Added HDL-32E.
+  * Start from block laser
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Wed, 03 Feb 2016 05:00:00 -0000
+
+
