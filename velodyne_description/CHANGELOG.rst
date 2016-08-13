@@ -2,7 +2,11 @@
 Changelog for package velodyne_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.0.2 (2016-02-04)
+1.0.3 (2016-08-13)
+------------------
+* Contributors: Kevin Hallenbeck
+
+1.0.2 (2016-02-03)
 ------------------
 * Moved M_PI property out of macro to support multiple instances
 * Materials caused problems with more than one sensors. Removed.
