@@ -1,0 +1,30 @@
+ros-indigo-velodyne-description (0.0.4-1trusty) trusty; urgency=high
+
+  * Use robotNamespace as prefix for PointCloud2 topic frame_id by default
+  * Contributors: Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 17 Oct 2017 04:00:00 -0000
+
+ros-indigo-velodyne-description (0.0.3-1trusty) trusty; urgency=high
+
+  * Increased minimum collision range to prevent self-clipping when in motion
+  * Added many URDF parameters, and set example sample count to reasonable values
+  * Launch rviz with gazebo
+  * Updated package.xml format to version 2
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 05 Sep 2017 04:00:00 -0000
+
+ros-indigo-velodyne-description (0.0.2-1trusty) trusty; urgency=high
+
+  * Moved M_PI property out of macro to support multiple instances
+  * Materials caused problems with more than one sensors. Removed.
+  * Added example urdf and gazebo
+  * Changed to DAE meshes
+  * Added meshes. Added HDL-32E.
+  * Start from block laser
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 04 Feb 2016 05:00:00 -0000
+
+
