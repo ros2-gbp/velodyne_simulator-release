@@ -1,0 +1,29 @@
+ros-indigo-velodyne-gazebo-plugins (0.0.4-1trusty) trusty; urgency=high
+
+  * Use robotNamespace as prefix for PointCloud2 topic frame_id by default
+  * Use Gazebo LaserScan message instead of direct LaserShape access, fixes timestamp issue
+  * Contributors: Kevin Hallenbeck, Max Schwarz, Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 17 Oct 2017 04:00:00 -0000
+
+ros-indigo-velodyne-gazebo-plugins (0.0.3-1trusty) trusty; urgency=high
+
+  * Fixed ground plane projection by removing interpolation
+  * Updated package.xml format to version 2
+  * Removed gazebo_plugins dependency
+  * Gazebo7 integration
+  * Contributors: Kevin Hallenbeck, Micho Radovnikovich, Konstantin Sorokin
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 05 Sep 2017 04:00:00 -0000
+
+ros-indigo-velodyne-gazebo-plugins (0.0.2-1trusty) trusty; urgency=high
+
+  * Display laser count when loading gazebo plugin
+  * Don't reverse ring for newer gazebo versions
+  * Changed to PointCloud2. Handle min and max range. Noise. General cleanup.
+  * Start from block laser
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 04 Feb 2016 05:00:00 -0000
+
+
