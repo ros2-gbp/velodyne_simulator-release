@@ -1,3 +1,29 @@
+## velodyne_simulator (kinetic) - 1.0.7-0
+
+The packages in the `velodyne_simulator` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release velodyne_simulator --track kinetic --rosdistro kinetic` on `Tue, 03 Jul 2018 15:02:55 -0000`
+
+These packages were released:
+- `velodyne_description`
+- `velodyne_gazebo_plugins`
+- `velodyne_simulator`
+
+Version of package(s) in repository `velodyne_simulator`:
+
+- upstream repository: https://bitbucket.org/DataspeedInc/velodyne_simulator.git
+- release repository: https://github.com/DataspeedInc-release/velodyne_simulator-release.git
+- rosdistro version: `1.0.6-0`
+- old version: `1.0.6-0`
+- new version: `1.0.7-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.6`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## velodyne_simulator (indigo) - 0.0.4-1
 
 The packages in the `velodyne_simulator` repository were released into the `indigo` distro by running `/usr/bin/bloom-release velodyne_simulator --track indigo --rosdistro indigo` on `Tue, 17 Oct 2017 19:31:10 -0000`
