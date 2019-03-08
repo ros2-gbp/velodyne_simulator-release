@@ -137,6 +137,13 @@ void GazeboRosVelodyneLaser::Load(sensors::SensorPtr _parent, sdf::ElementPtr _s
     max_range_ = _sdf->GetElement("max_range")->Get<double>();
   }
 
+  min_intensity_ = std::numeric_limits<double>::lowest();
+  if (!_sdf->HasElement("min_intensity")) {
+    ROS_INFO("Velodyne laser plugin missing <min_intensity>, defaults to no clipping");
+  } else {
+    min_intensity_ = _sdf->GetElement("min_intensity")->Get<double>();
+  }
+
   if (!_sdf->HasElement("topicName")) {
     ROS_INFO("Velodyne laser plugin missing <topicName>, defaults to /points");
     topic_name_ = "/points";
@@ -257,6 +264,7 @@ void GazeboRosVelodyneLaser::OnScan(ConstLaserScanStampedPtr& _msg)
 
   const double MIN_RANGE = std::max(min_range_, minRange);
   const double MAX_RANGE = std::min(max_range_, maxRange);
+  const double MIN_INTENSITY = min_intensity_;
 
   // Populate message fields
   const uint32_t POINT_STEP = 32;
@@ -293,7 +301,11 @@ void GazeboRosVelodyneLaser::OnScan(ConstLaserScanStampedPtr& _msg)
 
       // Range
       double r = _msg->scan().ranges(i + j * rangeCount);
-      if ((MIN_RANGE >= r) || (r >= MAX_RANGE)) {
+      // Intensity
+      double intensity = _msg->scan().intensities(i + j * rangeCount);
+      // Ignore points that lay outside range bands or optionally, beneath a
+      // minimum intensity level.
+      if ((MIN_RANGE >= r) || (r >= MAX_RANGE) || (intensity < MIN_INTENSITY) ) {
         continue;
       }
 
@@ -301,9 +313,6 @@ void GazeboRosVelodyneLaser::OnScan(ConstLaserScanStampedPtr& _msg)
       if (gaussian_noise_ != 0.0) {
         r += gaussianKernel(0,gaussian_noise_);
       }
-
-      // Intensity
-      double intensity = _msg->scan().intensities(i + j * rangeCount);
 
       // Get angles of ray to get xyz for point
       double yAngle;
