@@ -1,3 +1,29 @@
+## velodyne_simulator (melodic) - 1.0.9-0
+
+The packages in the `velodyne_simulator` repository were released into the `melodic` distro by running `/usr/bin/bloom-release velodyne_simulator --rosdistro melodic` on `Fri, 08 Mar 2019 17:02:11 -0000`
+
+These packages were released:
+- `velodyne_description`
+- `velodyne_gazebo_plugins`
+- `velodyne_simulator`
+
+Version of package(s) in repository `velodyne_simulator`:
+
+- upstream repository: https://bitbucket.org/DataspeedInc/velodyne_simulator.git
+- release repository: https://github.com/DataspeedInc-release/velodyne_simulator-release.git
+- rosdistro version: `1.0.8-0`
+- old version: `1.0.8-0`
+- new version: `1.0.9-0`
+
+Versions of tools used:
+
+- bloom version: `0.7.2`
+- catkin_pkg version: `0.4.10`
+- rosdep version: `0.15.1`
+- rosdistro version: `0.7.2`
+- vcstools version: `0.1.40`
+
+
 ## velodyne_simulator (lunar) - 1.0.9-0
 
 The packages in the `velodyne_simulator` repository were released into the `lunar` distro by running `/usr/bin/bloom-release velodyne_simulator --rosdistro lunar` on `Fri, 08 Mar 2019 15:55:57 -0000`
