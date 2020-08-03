@@ -1,0 +1,12 @@
+Source: ros-noetic-velodyne-gazebo-plugins
+Section: misc
+Priority: optional
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-gazebo-ros, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-tf
+Homepage: http://wiki.ros.org/velodyne_gazebo_plugins
+Standards-Version: 3.9.2
+
+Package: ros-noetic-velodyne-gazebo-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-gazebo-ros, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-tf
+Description: Gazebo plugin to provide simulated data from Velodyne laser scanners.
