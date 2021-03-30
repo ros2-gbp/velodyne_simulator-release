@@ -1,0 +1,12 @@
+Source: ros-noetic-velodyne-simulator
+Section: misc
+Priority: optional
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://wiki.ros.org/velodyne_simulator
+Standards-Version: 3.9.2
+
+Package: ros-noetic-velodyne-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-velodyne-description, ros-noetic-velodyne-gazebo-plugins
+Description: Metapackage allowing easy installation of Velodyne simulation components.
