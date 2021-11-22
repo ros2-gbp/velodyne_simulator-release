@@ -35,22 +35,46 @@
 #ifndef GAZEBO_ROS_VELODYNE_LASER_H_
 #define GAZEBO_ROS_VELODYNE_LASER_H_
 
+// Use the same source code for CPU and GPU plugins
+#ifndef GAZEBO_GPU_RAY
+#define GAZEBO_GPU_RAY 0
+#endif
+
+// Custom Callback Queue
+#include <ros/ros.h>
+#include <ros/callback_queue.h>
+#include <ros/advertise_options.h>
+
 #include <sdf/Param.hh>
-
-#include <gazebo/transport/Node.hh>
-
-#include <gazebo/common/Plugin.hh>
+#include <gazebo/physics/physics.hh>
+#include <gazebo/transport/TransportTypes.hh>
 #include <gazebo/msgs/MessageTypes.hh>
+
+#include <gazebo/common/Time.hh>
+#include <gazebo/common/Plugin.hh>
 #include <gazebo/sensors/SensorTypes.hh>
+#if GAZEBO_GPU_RAY
+#include <gazebo/plugins/GpuRayPlugin.hh>
+#else
+#include <gazebo/plugins/RayPlugin.hh>
+#endif
 
-#include <sensor_msgs/msg/point_cloud2.hpp>
+#include <boost/algorithm/string/trim.hpp>
+#include <boost/bind.hpp>
+#include <boost/thread.hpp>
+#include <boost/thread/mutex.hpp>
+#include <boost/thread/lock_guard.hpp>
 
-#include <gazebo_ros/node.hpp>
+#if GAZEBO_GPU_RAY
+#define GazeboRosVelodyneLaser GazeboRosVelodyneGpuLaser
+#define RayPlugin GpuRayPlugin
+#define RaySensorPtr GpuRaySensorPtr
+#endif
 
 namespace gazebo
 {
 
-  class GazeboRosVelodyneLaser : public SensorPlugin
+  class GazeboRosVelodyneLaser : public RayPlugin
   {
     /// \brief Constructor
     /// \param parent The parent entity, must be a Model or a Sensor
@@ -67,15 +91,16 @@ namespace gazebo
     private: void ConnectCb();
 
     /// \brief The parent ray sensor
-    private: sensors::SensorPtr parent_ray_sensor_;
+    private: sensors::RaySensorPtr parent_ray_sensor_;
 
-    private: gazebo_ros::Node::SharedPtr ros_node_;
+    /// \brief Pointer to ROS node
+    private: ros::NodeHandle* nh_;
 
     /// \brief ROS publisher
-    private: rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_;
+    private: ros::Publisher pub_;
 
-    /// \brief ROS timer to emulate publisher connection callback
-    private: rclcpp::TimerBase::SharedPtr timer_;
+    /// \brief topic name
+    private: std::string topic_name_;
 
     /// \brief frame transform name, should match link name
     private: std::string frame_name_;
@@ -106,7 +131,15 @@ namespace gazebo
     }
 
     /// \brief A mutex to lock access
-    private: std::mutex lock_;
+    private: boost::mutex lock_;
+
+    /// \brief For setting ROS name space
+    private: std::string robot_namespace_;
+
+    // Custom Callback Queue
+    private: ros::CallbackQueue laser_queue_;
+    private: void laserQueueThread();
+    private: boost::thread callback_laser_queue_thread_;
 
     // Subscribe to gazebo laserscan
     private: gazebo::transport::NodePtr gazebo_node_;
@@ -118,3 +151,4 @@ namespace gazebo
 } // namespace gazebo
 
 #endif /* GAZEBO_ROS_VELODYNE_LASER_H_ */
+

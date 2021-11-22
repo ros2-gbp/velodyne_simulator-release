@@ -1,12 +1,10 @@
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.0.2)
 project(velodyne_description)
 
-find_package(ament_cmake REQUIRED)
+find_package(catkin REQUIRED)
+
+catkin_package()
 
 install(DIRECTORY launch meshes rviz urdf world
-  DESTINATION share/${PROJECT_NAME}
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
-
-ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/env-hooks/velodyne_description.dsv.in")
-
-ament_package()
