@@ -1,1 +1,1 @@
-{"trim": "", "base": "447e9f9", "trimbase": "", "parent": "debian/noetic/velodyne_description", "previous": "54c5420"}
+{"base": "c980a44", "parent": "debian/noetic/velodyne_description", "previous": "904b5d7", "trim": "", "trimbase": ""}
