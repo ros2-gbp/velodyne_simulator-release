@@ -1,1 +1,1 @@
-{"trim": "", "base": "c2ed004", "trimbase": "", "parent": "debian/noetic/velodyne_gazebo_plugins", "previous": "a6afa08"}
+{"base": "386360b", "parent": "debian/noetic/velodyne_gazebo_plugins", "previous": "c78aa30", "trim": "", "trimbase": ""}
