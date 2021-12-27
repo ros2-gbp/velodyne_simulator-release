@@ -2,6 +2,9 @@
 Changelog for package velodyne_simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.2 (2021-12-27)
+------------------
+
 2.0.1 (2021-10-14)
 ------------------
 * Remove unused ament_lint_auto that was causing build error
