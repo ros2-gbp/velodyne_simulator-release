@@ -2,6 +2,11 @@
 Changelog for package velodyne_gazebo_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.2 (2021-12-27)
+------------------
+* Adds tf_prefix SDF parameter
+* Contributors: Micho Radovnikovich
+
 2.0.1 (2021-10-14)
 ------------------
 
