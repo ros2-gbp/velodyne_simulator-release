@@ -222,5 +222,4 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://bitbucket.org/DataspeedInc/velodyne_simulator.git
-    version: 2.0.2
-    version_saved: :{auto}
+    version: :{auto}
