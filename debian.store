@@ -1,1 +1,1 @@
-{"base": "6c101ff", "parent": "debian/rolling/velodyne_gazebo_plugins", "previous": "a1431c0", "trim": "", "trimbase": ""}
+{"base": "b5ac84c", "parent": "debian/humble/velodyne_gazebo_plugins", "previous": "cf9dcc0", "trim": "", "trimbase": ""}
