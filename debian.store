@@ -1,1 +1,1 @@
-{"base": "a704dca", "parent": "debian/rolling/velodyne_description", "previous": "61a149d", "trim": "", "trimbase": ""}
+{"base": "7c3805c", "parent": "debian/humble/velodyne_description", "previous": "338f857", "trim": "", "trimbase": ""}
