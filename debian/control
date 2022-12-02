@@ -1,0 +1,12 @@
+Source: ros-humble-velodyne-gazebo-plugins
+Section: misc
+Priority: optional
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-gazebo-dev, ros-humble-gazebo-msgs, ros-humble-gazebo-ros, ros-humble-rclcpp, ros-humble-sensor-msgs, ros-humble-ros-workspace
+Homepage: http://wiki.ros.org/velodyne_gazebo_plugins
+Standards-Version: 3.9.2
+
+Package: ros-humble-velodyne-gazebo-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-gazebo-dev, ros-humble-gazebo-msgs, ros-humble-gazebo-ros, ros-humble-rclcpp, ros-humble-sensor-msgs, ros-humble-ros-workspace
+Description: Gazebo plugin to provide simulated data from Velodyne laser scanners.
