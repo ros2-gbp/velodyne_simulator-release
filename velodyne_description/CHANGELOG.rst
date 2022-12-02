@@ -2,6 +2,12 @@
 Changelog for package velodyne_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.3 (2022-12-02)
+------------------
+* Add dummy collision to avoid moveit warnings
+* Remove gazebo_ros dependency for velodyne_description
+* Contributors: Filip Sund, Kevin Hallenbeck
+
 2.0.2 (2021-12-27)
 ------------------
 * Adds tf_prefix SDF parameter
