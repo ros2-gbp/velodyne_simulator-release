@@ -1,0 +1,12 @@
+Source: ros-iron-velodyne-description
+Section: misc
+Priority: optional
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-iron-ament-cmake, ros-iron-ros-workspace
+Homepage: http://wiki.ros.org/velodyne_description
+Standards-Version: 3.9.2
+
+Package: ros-iron-velodyne-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-iron-urdf, ros-iron-xacro, ros-iron-ros-workspace
+Description: URDF and meshes describing Velodyne laser scanners.
