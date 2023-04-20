@@ -1,0 +1,125 @@
+ros-iron-velodyne-gazebo-plugins (2.0.3-3bullseye) bullseye; urgency=high
+
+  * Fix logger print warning
+  * Update cmake for best practices based on other packages
+  * Default to C++17
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 01 Dec 2022 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (2.0.2-3bullseye) bullseye; urgency=high
+
+  * Adds tf_prefix SDF parameter
+  * Contributors: Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sun, 26 Dec 2021 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (2.0.1-3bullseye) bullseye; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Wed, 13 Oct 2021 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (2.0.0-3bullseye) bullseye; urgency=high
+
+  * Merged in ROS2 Foxy support (pull request #14)
+    * Remove support for old Gazebo versions
+    * Lazy subscriber using timer in the absence of publisher connection callback
+    * Python launch file
+    * Add env-hooks for GAZEBO_MODEL_PATH
+  * Contributors: Kevin Hallenbeck, Gonzalo de Pedro, Joep Tool
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 11 Oct 2021 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.12-3bullseye) bullseye; urgency=high
+
+  * Fix swapped PointCloud2 width/height
+    Bug introduced in recent commit adding organize_cloud option
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 29 Mar 2021 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.11-3bullseye) bullseye; urgency=high
+
+  * Remove support for end-of-life ROS distributions
+  * Add organize_cloud parameter to match velodyne_pointcloud
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 22 Feb 2021 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.10-3bullseye) bullseye; urgency=high
+
+  * Change PointCloud2 structure to match updated velodyne_pointcloud package
+  * Bump minimum CMake version to 3.0.2 in all CMakeLists.txt
+  * Contributors: Kevin Hallenbeck, Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sun, 02 Aug 2020 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.9-3bullseye) bullseye; urgency=high
+
+  * Added min_intensity parameter to support cliping of low intensity returns
+  * Contributors: Jonathan Wheare, Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 07 Mar 2019 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.8-3bullseye) bullseye; urgency=high
+
+  * Changed iteration order to more closely represent the live velodyne driver
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 07 Sep 2018 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.7-3bullseye) bullseye; urgency=high
+
+  * Added GPU support
+  * Added support for Gazebo 9
+  * Improved behavior of max range calculation
+  * Removed trailing slashes in robot namespace
+  * Fixed resolution of 1 not supported
+  * Fixed issue with only 1 vert or horiz ray
+  * Fixed cmake exports and warning
+  * Contributors: Kevin Hallenbeck, Jacob Seibert, Naoki Mizuno
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 02 Jul 2018 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.6-3bullseye) bullseye; urgency=high
+
+  * Use robotNamespace as prefix for PointCloud2 topic frame_id by default
+  * Use Gazebo LaserScan message instead of direct LaserShape access, fixes timestamp issue
+  * Contributors: Kevin Hallenbeck, Max Schwarz, Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 16 Oct 2017 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.5-3bullseye) bullseye; urgency=high
+
+  * Fixed ground plane projection by removing interpolation
+  * Contributors: Kevin Hallenbeck, Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 04 Sep 2017 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.4-3bullseye) bullseye; urgency=high
+
+  * Updated package.xml format to version 2
+  * Removed gazebo_plugins dependency
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sun, 23 Apr 2017 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.3-3bullseye) bullseye; urgency=high
+
+  * Gazebo7 integration
+  * Contributors: Kevin Hallenbeck, Konstantin Sorokin
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 12 Aug 2016 16:00:00 -0000
+
+ros-iron-velodyne-gazebo-plugins (1.0.2-3bullseye) bullseye; urgency=high
+
+  * Display laser count when loading gazebo plugin
+  * Don't reverse ring for newer gazebo versions
+  * Changed to PointCloud2. Handle min and max range. Noise. General cleanup.
+  * Start from block laser
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 02 Feb 2016 16:00:00 -0000
+
+
