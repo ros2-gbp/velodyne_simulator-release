@@ -1,0 +1,99 @@
+ros-iron-velodyne-simulator (2.0.3-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 01 Dec 2022 16:00:00 -0000
+
+ros-iron-velodyne-simulator (2.0.2-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sun, 26 Dec 2021 16:00:00 -0000
+
+ros-iron-velodyne-simulator (2.0.1-3jammy) jammy; urgency=high
+
+  * Remove unused ament_lint_auto that was causing build error
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Wed, 13 Oct 2021 16:00:00 -0000
+
+ros-iron-velodyne-simulator (2.0.0-3jammy) jammy; urgency=high
+
+  * Merged in ROS2 Foxy support (pull request #14)
+    * Remove support for old Gazebo versions
+    * Lazy subscriber using timer in the absence of publisher connection callback
+    * Python launch file
+    * Add env-hooks for GAZEBO_MODEL_PATH
+  * Contributors: Kevin Hallenbeck, Gonzalo de Pedro, Joep Tool
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 11 Oct 2021 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.12-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 29 Mar 2021 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.11-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 22 Feb 2021 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.10-3jammy) jammy; urgency=high
+
+  * Bump minimum CMake version to 3.0.2 in all CMakeLists.txt
+  * Contributors: Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sun, 02 Aug 2020 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.9-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 07 Mar 2019 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.8-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 07 Sep 2018 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.7-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 02 Jul 2018 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.6-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 16 Oct 2017 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.5-3jammy) jammy; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 04 Sep 2017 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.4-3jammy) jammy; urgency=high
+
+  * Updated package.xml format to version 2
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sun, 23 Apr 2017 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.3-3jammy) jammy; urgency=high
+
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 12 Aug 2016 16:00:00 -0000
+
+ros-iron-velodyne-simulator (1.0.2-3jammy) jammy; urgency=high
+
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 02 Feb 2016 16:00:00 -0000
+
+
