@@ -1,0 +1,12 @@
+Source: ros-iron-velodyne-simulator
+Section: misc
+Priority: optional
+Maintainer: Kevin Hallenbeck <khallenbeck@dataspeedinc.com>
+Build-Depends: debhelper (>= 9.0.0), ros-iron-ament-cmake, ros-iron-ros-workspace
+Homepage: http://wiki.ros.org/velodyne_simulator
+Standards-Version: 3.9.2
+
+Package: ros-iron-velodyne-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-iron-velodyne-description, ros-iron-velodyne-gazebo-plugins, ros-iron-ros-workspace
+Description: Metapackage allowing easy installation of Velodyne simulation components.
