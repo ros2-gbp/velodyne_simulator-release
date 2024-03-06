@@ -1,0 +1,117 @@
+ros-rolling-velodyne-description (2.0.3-3bookworm) bookworm; urgency=high
+
+  * Add dummy collision to avoid moveit warnings
+  * Remove gazebo_ros dependency for velodyne_description
+  * Contributors: Filip Sund, Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 02 Dec 2022 00:00:00 -0000
+
+ros-rolling-velodyne-description (2.0.2-3bookworm) bookworm; urgency=high
+
+  * Adds tf_prefix SDF parameter
+  * Contributors: Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 27 Dec 2021 00:00:00 -0000
+
+ros-rolling-velodyne-description (2.0.1-3bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 14 Oct 2021 00:00:00 -0000
+
+ros-rolling-velodyne-description (2.0.0-3bookworm) bookworm; urgency=high
+
+  * Merged in ROS2 Foxy support (pull request #14)
+    * Remove support for old Gazebo versions
+    * Lazy subscriber using timer in the absence of publisher connection callback
+    * Python launch file
+    * Add env-hooks for GAZEBO_MODEL_PATH
+  * Contributors: Kevin Hallenbeck, Gonzalo de Pedro, Joep Tool
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 12 Oct 2021 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.12-3bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 30 Mar 2021 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.11-3bookworm) bookworm; urgency=high
+
+  * Add organize_cloud parameter to match velodyne_pointcloud
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 23 Feb 2021 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.10-3bookworm) bookworm; urgency=high
+
+  * Change PointCloud visualization type from flat squares to points in example rviz config
+  * Bump minimum CMake version to 3.0.2 in all CMakeLists.txt
+  * Fix xacro macro instantiation
+  * Contributors: Kevin Hallenbeck, Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 03 Aug 2020 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.9-3bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 08 Mar 2019 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.8-3bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sat, 08 Sep 2018 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.7-3bookworm) bookworm; urgency=high
+
+  * Added GPU support
+  * Updated inertia tensors for VLP-16 and HDL-32E to realistic values
+  * Removed unnecessary file extraction code in cmake
+  * Contributors: Kevin Hallenbeck, Max Schwarz
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 03 Jul 2018 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.6-3bookworm) bookworm; urgency=high
+
+  * Use robotNamespace as prefix for PointCloud2 topic frame_id by default
+  * Contributors: Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 17 Oct 2017 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.5-3bookworm) bookworm; urgency=high
+
+  * Increased minimum collision range to prevent self-clipping when in motion
+  * Added many URDF parameters, and set example sample count to reasonable values
+  * Launch rviz with gazebo
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 05 Sep 2017 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.4-3bookworm) bookworm; urgency=high
+
+  * Updated package.xml format to version 2
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 24 Apr 2017 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.3-3bookworm) bookworm; urgency=high
+
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sat, 13 Aug 2016 00:00:00 -0000
+
+ros-rolling-velodyne-description (1.0.2-3bookworm) bookworm; urgency=high
+
+  * Moved M_PI property out of macro to support multiple instances
+  * Materials caused problems with more than one sensors. Removed.
+  * Added example urdf and gazebo
+  * Changed to DAE meshes
+  * Added meshes. Added HDL-32E.
+  * Start from block laser
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Wed, 03 Feb 2016 00:00:00 -0000
+
+
