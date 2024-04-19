@@ -1,0 +1,99 @@
+ros-jazzy-velodyne-simulator (2.0.3-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 02 Dec 2022 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (2.0.2-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 27 Dec 2021 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (2.0.1-4bookworm) bookworm; urgency=high
+
+  * Remove unused ament_lint_auto that was causing build error
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Thu, 14 Oct 2021 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (2.0.0-4bookworm) bookworm; urgency=high
+
+  * Merged in ROS2 Foxy support (pull request #14)
+    * Remove support for old Gazebo versions
+    * Lazy subscriber using timer in the absence of publisher connection callback
+    * Python launch file
+    * Add env-hooks for GAZEBO_MODEL_PATH
+  * Contributors: Kevin Hallenbeck, Gonzalo de Pedro, Joep Tool
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 12 Oct 2021 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.12-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 30 Mar 2021 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.11-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 23 Feb 2021 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.10-4bookworm) bookworm; urgency=high
+
+  * Bump minimum CMake version to 3.0.2 in all CMakeLists.txt
+  * Contributors: Micho Radovnikovich
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 03 Aug 2020 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.9-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Fri, 08 Mar 2019 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.8-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sat, 08 Sep 2018 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.7-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 03 Jul 2018 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.6-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 17 Oct 2017 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.5-4bookworm) bookworm; urgency=high
+
+
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Tue, 05 Sep 2017 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.4-4bookworm) bookworm; urgency=high
+
+  * Updated package.xml format to version 2
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Mon, 24 Apr 2017 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.3-4bookworm) bookworm; urgency=high
+
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Sat, 13 Aug 2016 00:00:00 -0000
+
+ros-jazzy-velodyne-simulator (1.0.2-4bookworm) bookworm; urgency=high
+
+  * Contributors: Kevin Hallenbeck
+
+ -- Kevin Hallenbeck <khallenbeck@dataspeedinc.com>  Wed, 03 Feb 2016 00:00:00 -0000
+
+
