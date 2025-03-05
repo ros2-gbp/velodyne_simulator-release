@@ -1,3 +1,30 @@
+## velodyne_simulator (jazzy) - 2.0.4-1
+
+The packages in the `velodyne_simulator` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --ros-distro jazzy velodyne_simulator --edit` on `Wed, 05 Mar 2025 16:31:43 -0000`
+
+The `velodyne_description` package was released.
+
+These packages were explicitly ignored:
+- `velodyne_gazebo_plugins`
+- `velodyne_simulator`
+
+Version of package(s) in repository `velodyne_simulator`:
+
+- upstream repository: https://bitbucket.org/DataspeedInc/velodyne_simulator.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `2.0.3-4`
+- new version: `2.0.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## velodyne_simulator (rolling) - 2.0.3-1
 
 The packages in the `velodyne_simulator` repository were released into the `rolling` distro by running `/usr/bin/bloom-release velodyne_simulator --rosdistro rolling` on `Fri, 02 Dec 2022 19:00:32 -0000`
