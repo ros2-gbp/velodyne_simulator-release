@@ -1,3 +1,10 @@
+# Orphaned package warning
+These packages are no longer maintained and will not work with newer versions of ROS and Gazebo.
+The latest ROS distribution supported is ROS2 Humble.
+Feel free to fork and continue development (BSD license).
+
+The velodyne_description package remains in ROS2 Jazzy because the community is using it, but it is not maintained.
+
 # Velodyne Simulator
 URDF description and Gazebo plugins to simulate Velodyne laser scanners
 
@@ -23,7 +30,7 @@ URDF description and Gazebo plugins to simulate Velodyne laser scanners
 * ```hz``` Update rate in hz. Default ```10```
 * ```lasers``` Number of vertical spinning lasers. Default ```VLP-16: 16, HDL-32E: 32```
 * ```samples``` Nuber of horizontal rotating samples. Default ```VLP-16: 1875, HDL-32E: 2187```
-* ```organize_cloud``` Organize PointCloud2 into 2D array with NaN placeholders, otherwise 1D array and leave out invlaid points. Default ```false```
+* ```organize_cloud``` Organize PointCloud2 into 2D array with NaN placeholders, otherwise 1D array and leave out invalid points. Default ```false```
 * ```min_range``` Minimum range value in meters. Default ```0.9```
 * ```max_range``` Maximum range value in meters. Default ```130.0```
 * ```noise``` Gausian noise value in meters. Default ```0.008```
@@ -33,7 +40,7 @@ URDF description and Gazebo plugins to simulate Velodyne laser scanners
 * ```min_intensity``` The minimum intensity beneath which returns will be clipped.  Can be used to remove low-intensity objects.
 
 # Known Issues
-* At full sample resolution, Gazebo can take up to 30 seconds to load the VLP-16 pluggin, 60 seconds for the HDL-32E
+* At full sample resolution, Gazebo can take up to 30 seconds to load the VLP-16 plugin, 60 seconds for the HDL-32E
 * When accelerated with the GPU option, ranges are heavily quantized ([image](img/gpu.png))
     * Solution: Use CPU instead of GPU
 * Gazebo cannot maintain 10Hz with large pointclouds
